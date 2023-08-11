@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+
 
 /**
  * main - Printing a specific statement
