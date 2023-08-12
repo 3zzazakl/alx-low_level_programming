@@ -1,12 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - 
- * 
+ * main - print hexadecimal numbers
+ *
  * Return: (Success) 0
 */
 int main(void)
 {
-       
-       return (0);
+	int num;
+
+	for (num = 0; num < 16; num++)
+	{
+		if(num < 10)
+		{
+			putchar(num + '0');
+		}
+		else
+		{
+			putchar('a' + (num - 10));
+		}
+	}
+	putchar('\n');
+	return (0);
 }
