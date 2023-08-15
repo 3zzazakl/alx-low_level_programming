@@ -1,6 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+/* Header files */
+#include <ctype.h>
+
 /* Function declarations */
 int _putchar(char c);
 

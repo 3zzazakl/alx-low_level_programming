@@ -1,5 +1,3 @@
-#include <ctype.h>
-#include "_putchar.c"
 #include "main.h"
 /**
  * _islower - Checking for lowercase character
