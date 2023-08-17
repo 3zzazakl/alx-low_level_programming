@@ -22,7 +22,7 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar((mul / 100) + '0');
 					_putchar(((mul / 10) % 10) + '0');
-					_putchar((mul% 10) + '0');
+					_putchar((mul % 10) + '0');
 				}
 				else if (mul > 9)
 				{
