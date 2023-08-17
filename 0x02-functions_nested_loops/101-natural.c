@@ -7,9 +7,9 @@
 int main(void)
 {
 	int END = 1024;
-	int sum = 0;
+	int sum = 0, x;
 
-	for (int x = 0; x < END; x++)
+	for (x = 0; x < END; x++)
 	{
 		if (x % 3 == 0 || x % 5 == 0)
 		{
