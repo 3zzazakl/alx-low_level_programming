@@ -16,6 +16,6 @@ int main(void)
 			sum += x;
 		}
 	}
-	printf("Sum of natural numbers is: %d\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
