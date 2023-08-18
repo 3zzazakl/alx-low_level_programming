@@ -29,6 +29,11 @@ int main(void)
 		else
 		{
 			printf("%d", x);
+
+			if (x == 100)
+			{
+				break;
+			}
 			printf(" ");
 		}
 	}
