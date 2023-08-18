@@ -17,7 +17,7 @@ int main(void)
 		}
 		else if (x % 5 == 0)
 		{
-			printf(" Buzz ");
+			printf("Buzz");
 			printf(" ");
 
 		}
