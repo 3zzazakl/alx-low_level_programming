@@ -23,17 +23,16 @@ int main(void)
 		else if (x % 5 == 0)
 		{
 			printf("Buzz");
+			if (x == 100)
+			{
+				break;
+			}
 			printf(" ");
 
 		}
 		else
 		{
 			printf("%d", x);
-
-			if (x == 100)
-			{
-				break;
-			}
 			printf(" ");
 		}
 	}
