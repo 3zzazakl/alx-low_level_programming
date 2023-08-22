@@ -1,23 +1,34 @@
 #include "main.h"
-
 /**
- * 
+ * main - generates random valid passwords for the program.
+ * checksum - Getting the Checksum of the program.
+ *
+ *
+ * Return: (0) Success
 */
 
-void generate_password(char *password) {
-	srand(time(NULL));
+int main(void)
+{
+	char *arg1 = "AAA";
+	int a = checksum(arg1);
 
-	for (int i = 0; i < PASSWORD_LENGTH; i++) 
-	{
-		password[i] = (char)rand() % 128;
-	}
+	printf("sum %d\n", a);
+	return (0);
 }
-int main() {
-	char password[PASSWORD_LENGTH];
 
-	generate_password(password);
+int64_t checksum(char *arg1)
+{
+	char var_18h;
+	int64_t var_8h;
 
-	printf("The password is: %s\n", password);
+	var_8h = 0;
+	for (var_18h = *arg1; *arg1 != '\0'; arg1++)
+	{
+	/*adding a printf statement to know what is getting added to var_8h*/
+	printf("%c\n", var_18h);
+	var_8h = var_8h + var_18h;
+	var_18h = *arg1;
 
-	return 0;
+	}
+	return (var_8h);
 }
