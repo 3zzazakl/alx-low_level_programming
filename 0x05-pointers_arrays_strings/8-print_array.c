@@ -14,7 +14,6 @@ void print_array(int *a, int n)
 		if (x == n - 1)
 		{
 			printf("%d", a[x]);
-			printf("\n");
 		}
 		else
 		{
@@ -23,4 +22,5 @@ void print_array(int *a, int n)
 			printf(" ");
 		}
 	}
+	printf("\n");
 }
