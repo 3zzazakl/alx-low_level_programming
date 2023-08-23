@@ -5,6 +5,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdint.h>
+#include <ctype.h>
+#include <limits.h>
+
 
 /* Function Declarations */
 void reset_to_98(int *n);
