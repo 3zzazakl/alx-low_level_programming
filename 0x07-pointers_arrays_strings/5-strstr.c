@@ -9,11 +9,11 @@
 char *_strstr(char *haystack, char *needle)
 {
 	char *ptr = haystack;
+	char *p = needle;
 
 	while (*haystack != '\0')
 	{
 		ptr = haystack;
-		char *p = needle;
 
 		while (*haystack && *p && *haystack == *p)
 		{
