@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * set_string: set the string.
+ * set_string - set the string.
  * @s: Input string.
  * @to: Output string.
 */
