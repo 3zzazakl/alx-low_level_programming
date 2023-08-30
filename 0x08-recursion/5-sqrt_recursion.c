@@ -6,17 +6,18 @@
 */
 int _sqrt_recursion(int n)
 {
-	int i = 1, result = 1;
+	int x = 0;
 
-	if (n == 0  || n == 1)
+	while (x * x < n)
 	{
-		return (n);
+		x++;
 	}
-
-	while (result <= n)
+	if (x * x == n)
 	{
-		i++;
-		result = i * i;
+		return (x);
 	}
-	return (i - 1);
+	else
+	{
+		return (-1);
+	}
 }
