@@ -1,23 +1,26 @@
 #include "main.h"
 /**
  * _sqrt_recursion - getting natural square root of a number.
+ * ft_sqrt_recursion - getting natural square root using another function.
  * @n: Input number.
  * Return: (The result)
 */
 int _sqrt_recursion(int n)
 {
-	int x = 0;
-
-	while (x * x < n)
+	return (ft_sqrt_recursion(n, 0));
+}
+int ft_sqrt_recursion(int n, int b)
+{
+	if (b * b == n)
 	{
-		x++;
+		return (b);
 	}
-	if (x * x == n)
+	else if (b * b > n)
 	{
-		return (x);
+		return (-1);
 	}
 	else
 	{
-		return (-1);
+		return (ft_sqrt_recursion(n, b + 1));
 	}
 }
