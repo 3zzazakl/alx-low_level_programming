@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int n1 = 0, n2 = 1, sum = 0, nxt;
+	long n1 = 0, n2 = 1, sum = 0, nxt;
 
 	while (sum < 50)
 	{
@@ -14,12 +14,12 @@ int main(void)
 
 		if (sum == 49)
 		{
-			printf("%d", nxt);
+			printf("%lu", nxt);
 
 		}
 		else
 		{
-			printf("%d, ", nxt);
+			printf("%lu, ", nxt);
 
 		}
 		n1 = n2;
