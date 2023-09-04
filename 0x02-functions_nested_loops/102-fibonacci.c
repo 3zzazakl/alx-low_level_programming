@@ -11,7 +11,17 @@ int main(void)
 	while (sum < 50)
 	{
 		nxt = n1 + n2;
-		printf("%d, ", nxt);
+
+		if (sum == 49)
+		{
+			printf("%d", nxt);
+
+		}
+		else
+		{
+			printf("%d, ", nxt);
+
+		}
 		n1 = n2;
 		n2 = nxt;
 		sum++;
