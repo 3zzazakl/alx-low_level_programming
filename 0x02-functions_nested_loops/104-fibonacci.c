@@ -8,11 +8,11 @@ int main(void)
 {
 	unsigned long n1 = 0, n2 = 1, sum = 0, nxt;
 
-	while (sum < 89)
+	while (sum < 98)
 	{
 		nxt = n1 + n2;
 
-		if (sum == 88)
+		if (sum == 97)
 		{
 			printf("%lu", nxt);
 
