@@ -32,7 +32,7 @@ long largest(long n)
 */
 int main(void)
 {
-	long n = 1231952;
+	long n = 612852475143;
 
 	printf("%ld\n", largest(n));
 
