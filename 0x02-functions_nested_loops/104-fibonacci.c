@@ -6,7 +6,7 @@
 */
 int main(void)
 {
-	long n1 = 0, n2 = 1, sum = 0, nxt;
+	unsigned long n1 = 0, n2 = 1, sum = 0, nxt;
 
 	while (sum < 89)
 	{
