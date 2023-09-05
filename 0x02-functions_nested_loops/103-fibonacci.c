@@ -17,6 +17,6 @@ int main(void)
 		n1 = n2;
 		n2 = nxt;
 	}
-	printf("%d \n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
