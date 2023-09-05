@@ -1,22 +1,22 @@
 #include <stdio.h>
 
 /**
- * main - Printing the first 10 Fibonacci numbers.
- * Return: (total sum of first 10 numbers).
+ * main - Printing sum of the even-valued terms.
+ * Return: (Success) 0.
  */
 int main(void)
 {
-	long n1 = 0, n2 = 1, sum = 0, nxt, total = 0;
+	int n1 = 1, n2 = 2, sum = 0, nxt;
 
-	while (sum < 10)
+	while (n2 <= 4000000)
 	{
+		if (n2 % 2 == 0)
+			sum += n2;
+
 		nxt = n1 + n2;
 		n1 = n2;
 		n2 = nxt;
-
-		total += nxt;
-		sum++;
 	}
-	printf("%lu\n", total);
+	printf("%d \n", sum);
 	return (0);
 }
