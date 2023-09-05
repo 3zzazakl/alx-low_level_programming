@@ -2,30 +2,34 @@
 
 /**
  * main - prints the first 98 Fibonacci numbers.
- * Return: (0) Success.
+ * Return: (Success) 0.
 */
+
 int main(void)
 {
-	unsigned long n1 = 0, n2 = 1, sum = 0, nxt;
+	unsigned int a = 1, b = 2, temp;
+	int count;
 
-	while (sum < 98)
+	printf("%u, %u, ", a, b);
+
+	for (count = 3; count <= 98; count++)
 	{
-		nxt = n1 + n2;
+		temp = a + b;
 
-		if (sum == 97)
+		printf("%u", temp);
+
+		if (count < 98)
 		{
-			printf("%lu", nxt);
-
+			printf(", ");
 		}
 		else
 		{
-			printf("%lu, ", nxt);
-
+			printf("\n");
 		}
-		n1 = n2;
-		n2 = nxt;
-		sum++;
+
+		a = b;
+		b = temp;
 	}
-	printf("\n");
+
 	return (0);
 }
