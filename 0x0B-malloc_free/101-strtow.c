@@ -9,17 +9,17 @@ char **strtow(char *str)
 {
 	char *token;
 
-       if (str == NULL ||  *str == '\0')
-       {
-              return (NULL);
-       }
+	if (str == NULL ||  *str == '\0')
+	{
+		return (NULL);
+	}
 
-       token = strtok(str, " ");
+	token = strtok(str, " ");
 
-       while (token != NULL)
-       {
-              printf("%s\n", token);
-              token = strtok(NULL, " ");
-       }
-       return (0);
+	while (token != NULL)
+	{
+		printf("%s\n", token);
+		token = strtok(NULL, " ");
+	}
+	return (0);
 }
