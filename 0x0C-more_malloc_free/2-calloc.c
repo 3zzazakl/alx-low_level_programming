@@ -4,11 +4,11 @@
  * _calloc - allocates memory for an array.
  * @nmemb: number of bytes to allocate.
  * @size: size of memory
- * Return: address.
+ * Return: (address).
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *ptr = malloc(nmemb * size);
+	void *ptr = malloc(nmemb * size);
 
 	if (nmemb == 0 || size == 0)
 	{
