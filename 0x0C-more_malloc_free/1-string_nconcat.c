@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 
 	strcpy(output, s1);
-	strncat(output + len1, s2, n);
+	strncat(output, s2, n);
 	output[len1 + n] = '\0';
 
 	return (output);
