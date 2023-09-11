@@ -2,6 +2,7 @@
 #define DOG_H
 
 /* Headers_Declaration */
+#include <stdio.h>
 
 
 /* Struct-Declaration */
