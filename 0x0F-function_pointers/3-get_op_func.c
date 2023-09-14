@@ -1,5 +1,4 @@
 #include "3-calc.h"
-#include "3-op_functions.c"
 
 /**
  * get_op_func - Printing result.
