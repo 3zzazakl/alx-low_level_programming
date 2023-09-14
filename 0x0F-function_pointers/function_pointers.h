@@ -2,7 +2,7 @@
 #define FUNCTION_POINTERS_H
 
 /*Headers_Declarations*/
-
+#include <stdio.h>
 
 /*Function_Decleations*/
 void print_name(char *name, void (*f)(char *));
