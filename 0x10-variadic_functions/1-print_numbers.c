@@ -7,22 +7,22 @@
 */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-    unsigned int x;
+	unsigned int x;
 
-    va_list args;
+	va_list args;
 
-    va_start(args, n);
+	va_start(args, n);
 
-    if (separator == NULL)
-    {
-        separator = "";
-    }
-    for (x = 0; x < n; x++)
-    {
-        printf("%d", va_arg(args, int));
-        if (x < n - 1)
-            printf("%s", separator);
-    }
-    printf("\n");
-    return(args);
+	if (separator == NULL)
+	{
+		separator = "";
+	}
+	for (x = 0; x < n; x++)
+	{
+		printf("%d", va_arg(args, int));
+		if (x < n - 1)
+			printf("%s", separator);
+	}
+	printf("\n");
+	return (args);
 }
