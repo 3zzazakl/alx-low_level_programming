@@ -7,9 +7,9 @@
 */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	unsigned int x;
-
 	va_list args;
+
+	unsigned int x;
 
 	va_start(args, n);
 
@@ -23,6 +23,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		if (x < n - 1)
 			printf("%s", separator);
 	}
-	va_end (args);
+	va_end(args);
 	printf("\n");
 }
