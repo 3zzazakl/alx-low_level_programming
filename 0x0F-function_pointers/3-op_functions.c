@@ -2,7 +2,7 @@
 
 /**
  * op_add - adding 2 numbers.
- * @a: firt number
+ * @a: first number
  * @b: second number
  * Return: (Result)
 */

@@ -1,7 +1,7 @@
 #ifndef CALC_H
 #define CALC_H
 
-/********Heaers_Declarations*****/
+/********Headers_Declarations*****/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

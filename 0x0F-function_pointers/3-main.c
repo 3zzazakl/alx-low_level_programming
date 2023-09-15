@@ -1,15 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "3-calc.h"
-
 /**
- * main - Calculating some Operations.
- * @argc: no of arguments
- * @argv: array of arguments
- * Return: (Success) 0.
+ * main - prrint the result of simple operation
+ *
+ * @argc: the number of arguments.
+ *
+ * @argv: an array
+ *
+ * Return: always 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-int number1, number2, result;
-	int (*op_func)(int, int);
+	int num1, num2;
+	char *op;
 
 	if (argc != 4)
 	{
@@ -17,19 +21,21 @@ int number1, number2, result;
 		exit(98);
 	}
 
-	number1 = atoi(argv[1]);
-	number2 = atoi(argv[3]);
+	num1 = atoi(argv[1]);
+	op = argv[2];
+	num2 = atoi(argv[3]);
 
-	op_func = get_op_func(argv[2]);
-
-	if (op_func == NULL)
+	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	result = op_func(number1, number2);
-	printf("%d\n", result);
-
+	if ((*op == '/' && num2 == 0) || (*op == '%' && num2 == 0))
+	{
+		printf("Error\n");
+		exit(100);
+	}
+	printf("%d\n", get_op_func(op)(num1, num2));
 	return (0);
 }
