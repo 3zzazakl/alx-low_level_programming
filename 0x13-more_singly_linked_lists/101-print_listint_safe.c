@@ -23,5 +23,9 @@ size_t print_listint_safe(const listint_t *head)
 		}
 		current = current->next;
 	}
+
+	if (!head)
+		exit(98);
+		
 	return (count);
 }
