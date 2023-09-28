@@ -16,12 +16,15 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	}
 
-	while (b[y] == '0' || b[y] == '1')
+	while (b[y] != '\0')
 	{
+		if (b[y] != '0' && b[y] != '1')
+		{
+			return (0);
+		}
 		x <<= 1;
 		x += b[y] - '0';
 		y++;
 	}
 	return (x);
-
 }
