@@ -20,6 +20,8 @@ int count_words(char *str)
 			while (i < length && str[i] != ' ')
 				i++;
 		}
+		else
+			i++;
 	}
 	return (count);
 }
