@@ -7,7 +7,7 @@
 char *leet(char *s)
 {
 	int i, j;
-	char let[8] = {'0', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	char let[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
 	while (s[i])
 	{
