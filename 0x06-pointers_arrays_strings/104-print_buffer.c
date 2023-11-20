@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
  * print_line - print bytes of a buffer
  * @c: buffer to print
@@ -11,19 +9,20 @@ void print_line(char *c, int s, int l)
 {
 	int j, k;
 
-	for (j = 0; j <= 9; j++)
+	for (j = 0; j <= 10; j++)
 	{
-		if (j <= s)
-			printf("%02x", c[l * 10 + j]);
+		if (j < s)
+			printf("%02x", (unsigned char)c[l * 10 + j]);
 		else
 			printf(" ");
-		if (j % 2)
-			putchar(' ');
+	/* 	if (j % 2)
+			putchar(' '); */
 	}
+	printf(" ");
 
-	for (k = 0; k <= s; k++)
+	for (k = 0; k < s; k++)
 	{
-		if (c[l * 10 + k] > 31 && c[l * 10 + k] < 127)
+		if (c[l * 10 + k] >= 32 && c[l * 10 + k] <= 126)
 			putchar(c[l * 10 + k]);
 		else
 			putchar('.');
