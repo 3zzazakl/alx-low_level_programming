@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
  * main - generates random valid passwords for the program.
  * checksum - Getting the Checksum of the program.
@@ -11,7 +12,7 @@
 
 int main(void)
 {
-	int sum;
+	int sum = 0;
 	char c;
 
 	srand(time(NULL));
