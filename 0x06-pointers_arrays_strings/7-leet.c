@@ -6,7 +6,7 @@
 */
 char *leet(char *s)
 {
-	int i, j;
+	int i = 0, j;
 	char let[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
 	while (s[i])
