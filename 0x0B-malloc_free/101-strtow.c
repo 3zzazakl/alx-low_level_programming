@@ -49,7 +49,7 @@ char **strtow(char *str)
 			j = i;
 			while (i < length && str[i] != ' ')
 				i++;
-			words[index] = malloc((i - j + 2) * sizeof(char));
+			words[index] = malloc((i - j + 1) * sizeof(char));
 			if (words[index] == NULL)
 				return (NULL);
 			strncpy(words[index], &str[j], i - j);
