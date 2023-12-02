@@ -14,12 +14,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (ht == NULL || ht->array == NULL)
 		return (0);
-
 	item = create_item(key, value);
-
 	if (item == NULL)
 		return (0);
-
 	index = key_index((const unsigned char *) key, ht->size);
 
 	temp = ht->array[index];
