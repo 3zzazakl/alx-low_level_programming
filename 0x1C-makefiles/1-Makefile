@@ -1,0 +1,11 @@
+# creating a testing make file.
+CC = gcc
+#CFLAGS = -Wall
+SRC = *.c
+
+all: school
+
+school: main.c school.c 
+#    $(CC) $(CFLAGS) -o school main.c school.c
+#	gcc main.c school.c -o school
+	$(CC) $(SRC) -o school
