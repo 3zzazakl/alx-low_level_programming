@@ -1,7 +1,7 @@
 # creating a testing make file.
 CC = gcc
 #CFLAGS = -Wall
-SRC = *.c
+SRC = main.c school.c
 
 all: school
 
