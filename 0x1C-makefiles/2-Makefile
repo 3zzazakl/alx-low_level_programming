@@ -2,12 +2,12 @@
 CC = gcc
 #CFLAGS = -Wall
 SRC = main.c school.c
-OBJ = 
+OBJ = $(SRC:.c=.o)
 NAME = school
 
-all: school
+all: $(OBJ)
+#gcc    -c -o main.o main.c
+#gcc    -c -o school.o school.c
+#gcc main.o school.o -o school
+	$(CC) $(OBJ) -o $(NAME)
 
-school: $(SRC)
-#    $(CC) $(CFLAGS) -o school main.c school.c
-#	gcc main.c school.c -o school
-	$(CC) $(SRC) -o $(NAME)
