@@ -1,0 +1,13 @@
+# Testing make file.
+CC = gcc
+#CFLAGS = -Wall
+SRC = main.c school.c
+OBJ = 
+NAME = school
+
+all: school
+
+school: $(SRC)
+#    $(CC) $(CFLAGS) -o school main.c school.c
+#	gcc main.c school.c -o school
+	$(CC) $(SRC) -o $(NAME)
